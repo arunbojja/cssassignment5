@@ -1,0 +1,105 @@
+body{
+    background-color: yellow;
+}
+.a{
+    display: flex;
+    justify-content:space-evenly;
+    flex-wrap: nowrap;
+    margin-left: 50px;
+    padding: 50px;
+    }
+
+.row1{
+    background-color: rgb(30, 148, 184);
+    height: 150px;
+    width: 150px;
+    animation-name: skew-animation;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+   
+}
+
+@keyframes skew-animation{
+    50% {
+        transform: skewX(-30deg);
+    }
+    100% {
+        transform: skewX(30deg);
+    }
+}
+
+.row2{
+    background-color: gray;
+    height: 150px;
+    width: 150px;
+    animation-name: skew-animation1;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+@keyframes skew-animation1{
+0% {
+    transform: skewY(25deg);
+}
+100% {
+    transform: skewY(-25deg);
+}
+}
+
+.row3{
+    background-color: rgb(30, 148, 184);
+    height: 150px;
+    width: 150px;
+    animation-name: rotate-animation;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+@keyframes rotate-animation{
+    100% {
+        transform: rotate(360deg);
+    }
+}
+.box4-1{
+    margin-top: 50px;
+    height: 15px;
+    width: 150px;
+    background-color: rgb(30, 148, 184);
+    animation-name: scale-animation;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+@keyframes scale-animation{
+    100%{
+    transform: scaleY(10);
+}
+}
+.box4-2{
+    height: 150px;
+    width: 10px;
+    background-color: maroon;
+    animation-name: scale-animation1;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+@keyframes scale-animation1{
+    100% {
+        transform: scaleX(15);
+    }
+}
+.box4-3{
+    height: 150px;
+    width: 150px;
+    background-color: limegreen;
+    animation-name: rotate;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+@keyframes rotate{
+100% {
+    transform: rotate(-90deg);
+}
+}
+.text{
+    text-align: center;
+    font-size: larger;
+}

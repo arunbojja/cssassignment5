@@ -1,0 +1,111 @@
+body{
+    background-image: url(./sky.jpg);
+    /* position: relative; */
+}
+
+h1{
+    text-align: center;
+}
+.happy{
+    background-color: orange;
+}
+.independence{
+    background-color: white;
+}
+.day{
+    background-color: green;
+}
+.city{
+    background-image: url(./city.png);
+    height: 33%;
+    width: 30000px;
+    position: absolute;
+    bottom: 33%;
+    animation-name: translate;
+    animation-duration: 80s;
+    animation-iteration-count: infinite;
+}
+.road{
+    background-image: url(./road.jpg);
+    position: absolute;
+    width: 30000px;
+    height: 33%;
+    bottom: 0px;
+    animation-name: translate;
+    animation-duration: 80s;
+    animation-iteration-count: infinite;
+}
+.car{
+    width: 500px;
+    height: 200px;
+    position: absolute;
+    left: 450px;
+    bottom: 100px;
+    background-image: url(./car.png);
+    
+}
+@keyframes translate{
+    100%{
+        transform: translateX(-29000px)
+    }
+}
+.sun{
+    position: fixed;
+    top: 25px;
+    right: 50px;
+    background-image: url(./sun_PNG13449.png);
+    height: 150px;
+    width: 150px;
+    animation-name: sun-translate;
+    animation-duration: 100s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+    @keyframes sun-translate{
+        100%{
+            transform: translateX(-1000px)
+        }
+    }
+.wheel1{
+    height: 75px;
+    width: 75px;
+    background-image:url(./wheel.png);
+    animation-name: rotate;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    position: absolute;
+    bottom: 115px;
+    left: 500px;
+}
+@keyframes rotate{
+    100%{
+        transform: rotate(360deg);
+    }
+}
+.wheel2{
+    height: 75px;
+    width: 75px;
+    background-image:url(./wheel.png);
+    animation-name: rotate;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    position: absolute;
+    bottom: 115px;
+    left: 810px
+    ;
+}
+@keyframes rotate{
+    100%{
+        transform: rotate(360deg);
+    }
+}
+.flag{
+    width: 80px;
+    height: 100px;
+    position: absolute;
+    left: 880px;
+    bottom: 210px;
+    background-image: url(./flag.jpg);
+}
